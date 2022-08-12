@@ -6,6 +6,8 @@
 
 [3. 无重复字符的最长子串](../problemset/longest-substring-without-repeating-characters/README.md)
 
+[8. 字符串转换整数 (atoi)](../problemset/string-to-integer-atoi/README.md)
+
 [15. 三数之和](../problemset/3sum/README.md)
 
 [88. 合并两个有序数组](../problemset/merge-sorted-array/README.md)
