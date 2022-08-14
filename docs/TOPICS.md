@@ -10,6 +10,8 @@
 
 [15. 三数之和](../problemset/3sum/README.md)
 
+[21. 合并两个有序链表](../problemset/merge-two-sorted-lists/README.md)
+
 [88. 合并两个有序数组](../problemset/merge-sorted-array/README.md)
 
 [211. 添加与搜索单词 - 数据结构设计](../problemset/design-add-and-search-words-data-structure/README.md)
