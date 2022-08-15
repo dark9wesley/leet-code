@@ -12,6 +12,8 @@
 
 [21. 合并两个有序链表](../problemset/merge-two-sorted-lists/README.md)
 
+[83. 删除排序链表中的重复元素](../problemset/remove-duplicates-from-sorted-list/README.md)
+
 [88. 合并两个有序数组](../problemset/merge-sorted-array/README.md)
 
 [211. 添加与搜索单词 - 数据结构设计](../problemset/design-add-and-search-words-data-structure/README.md)
