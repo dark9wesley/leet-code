@@ -20,6 +20,8 @@
 
 [88. 合并两个有序数组](../problemset/merge-sorted-array/README.md)
 
+[206. 反转链表](../problemset/reverse-linked-list/README.md)
+
 [211. 添加与搜索单词 - 数据结构设计](../problemset/design-add-and-search-words-data-structure/README.md)
 
 [680. 验证回文字符串 Ⅱ](../problemset/valid-palindrome-ii/README.md)
