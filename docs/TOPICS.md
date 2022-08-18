@@ -22,6 +22,8 @@
 
 [92. 反转链表 II](../problemset/reverse-linked-list-ii/README.md)
 
+[141. 环形链表](../problemset/linked-list-cycle/README.md)
+
 [206. 反转链表](../problemset/reverse-linked-list/README.md)
 
 [211. 添加与搜索单词 - 数据结构设计](../problemset/design-add-and-search-words-data-structure/README.md)
