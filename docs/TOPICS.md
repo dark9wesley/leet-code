@@ -16,6 +16,8 @@
 
 [21. 合并两个有序链表](../problemset/merge-two-sorted-lists/README.md)
 
+[46. 全排列](../problemset/permutations/README.md)
+
 [82. 删除排序链表中的重复元素 II](../problemset/remove-duplicates-from-sorted-list-ii/README.md)
 
 [83. 删除排序链表中的重复元素](../problemset/remove-duplicates-from-sorted-list/README.md)
