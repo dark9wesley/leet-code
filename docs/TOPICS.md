@@ -18,6 +18,8 @@
 
 [46. 全排列](../problemset/permutations/README.md)
 
+[78. 子集](../problemset/subsets/README.md)
+
 [82. 删除排序链表中的重复元素 II](../problemset/remove-duplicates-from-sorted-list-ii/README.md)
 
 [83. 删除排序链表中的重复元素](../problemset/remove-duplicates-from-sorted-list/README.md)
