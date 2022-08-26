@@ -36,6 +36,8 @@
 
 [144. 二叉树的前序遍历](../problemset/binary-tree-preorder-traversal/README.md)
 
+[145. 二叉树的后序遍历](../problemset/binary-tree-postorder-traversal/README.md)
+
 [155. 最小栈](../problemset/min-stack/README.md)
 
 [206. 反转链表](../problemset/reverse-linked-list/README.md)
