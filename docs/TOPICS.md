@@ -30,6 +30,8 @@
 
 [92. 反转链表 II](../problemset/reverse-linked-list-ii/README.md)
 
+[94. 二叉树的中序遍历](../problemset/binary-tree-inorder-traversal/README.md)
+
 [141. 环形链表](../problemset/linked-list-cycle/README.md)
 
 [142. 环形链表 II](../problemset/linked-list-cycle-ii/README.md)
