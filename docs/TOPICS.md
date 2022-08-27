@@ -48,6 +48,8 @@
 
 [211. 添加与搜索单词 - 数据结构设计](../problemset/design-add-and-search-words-data-structure/README.md)
 
+[226. 翻转二叉树](../problemset/invert-binary-tree/README.md)
+
 [232. 用栈实现队列](../problemset/implement-queue-using-stacks/README.md)
 
 [239. 滑动窗口最大值](../problemset/sliding-window-maximum/README.md)
