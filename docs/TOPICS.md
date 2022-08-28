@@ -32,6 +32,8 @@
 
 [94. 二叉树的中序遍历](../problemset/binary-tree-inorder-traversal/README.md)
 
+[98. 验证二叉搜索树](../problemset/validate-binary-search-tree/README.md)
+
 [102. 二叉树的层序遍历](../problemset/binary-tree-level-order-traversal/README.md)
 
 [141. 环形链表](../problemset/linked-list-cycle/README.md)
