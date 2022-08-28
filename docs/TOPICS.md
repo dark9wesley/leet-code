@@ -60,4 +60,6 @@
 
 [700. 二叉搜索树中的搜索](../problemset/search-in-a-binary-search-tree/README.md)
 
+[701. 二叉搜索树中的插入操作](../problemset/insert-into-a-binary-search-tree/README.md)
+
 [739. 每日温度](../problemset/daily-temperatures/README.md)
