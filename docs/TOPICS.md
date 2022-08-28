@@ -58,4 +58,6 @@
 
 [680. 验证回文字符串 Ⅱ](../problemset/valid-palindrome-ii/README.md)
 
+[700. 二叉搜索树中的搜索](../problemset/search-in-a-binary-search-tree/README.md)
+
 [739. 每日温度](../problemset/daily-temperatures/README.md)
