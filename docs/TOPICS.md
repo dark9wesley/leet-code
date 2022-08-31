@@ -38,6 +38,8 @@
 
 [108. 将有序数组转换为二叉搜索树](../problemset/convert-sorted-array-to-binary-search-tree/README.md)
 
+[110. 平衡二叉树](../problemset/balanced-binary-tree/README.md)
+
 [141. 环形链表](../problemset/linked-list-cycle/README.md)
 
 [142. 环形链表 II](../problemset/linked-list-cycle-ii/README.md)
