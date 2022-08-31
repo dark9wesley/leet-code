@@ -69,3 +69,5 @@
 [701. 二叉搜索树中的插入操作](../problemset/insert-into-a-binary-search-tree/README.md)
 
 [739. 每日温度](../problemset/daily-temperatures/README.md)
+
+[1382. 将二叉搜索树变平衡](../problemset/balance-a-binary-search-tree/README.md)
