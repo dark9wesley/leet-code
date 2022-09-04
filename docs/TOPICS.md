@@ -54,6 +54,8 @@
 
 [211. 添加与搜索单词 - 数据结构设计](../problemset/design-add-and-search-words-data-structure/README.md)
 
+[215. 数组中的第 K 个最大元素](../problemset/kth-largest-element-in-an-array/README.md)
+
 [226. 翻转二叉树](../problemset/invert-binary-tree/README.md)
 
 [232. 用栈实现队列](../problemset/implement-queue-using-stacks/README.md)
