@@ -44,3 +44,82 @@ var findKthLargest = function (nums, k) {
   return nums[k - 1]
 }
 ```
+
+### 小顶堆
+
+```javascript
+/**
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number}
+ */
+var findKthLargest = function (nums, k) {
+  const heap = []
+
+  let n = 0
+
+  function createHeap() {
+    for (let i = 0; i < k; i++) {
+      insert(nums[i])
+    }
+  }
+
+  function updateHeap() {
+    for (let i = k; i < nums.length; i++) {
+      if (nums[i] > heap[0]) {
+        heap[0] = nums[i]
+        downHeap(0, n)
+      }
+    }
+  }
+
+  function downHeap(low, high) {
+    let i = low
+    let j = i * 2 + 1
+    while (j <= high) {
+      if (j + 1 <= high && heap[j + 1] < heap[j]) {
+        j = j + 1
+      }
+
+      if (heap[i] > heap[j]) {
+        let temp = heap[j]
+        heap[j] = heap[i]
+        heap[i] = temp
+        i = j
+        j = i * 2 + 1
+      } else {
+        break
+      }
+    }
+  }
+
+  function upHeap(low, high) {
+    let i = high
+    let j = Math.floor((i - 1) / 2)
+
+    while (j >= low) {
+      if (heap[j] > heap[i]) {
+        let temp = heap[j]
+        heap[j] = heap[i]
+        heap[i] = temp
+        i = j
+        j = Math.floor((i - 1) / 2)
+      } else {
+        break
+      }
+    }
+  }
+
+  function insert(num) {
+    heap[n] = num
+    upHeap(0, n)
+    n++
+  }
+
+  createHeap()
+
+  updateHeap()
+
+  return heap[0]
+}
+```
