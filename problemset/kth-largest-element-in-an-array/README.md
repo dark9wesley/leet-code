@@ -44,3 +44,18 @@ var findKthLargest = function (nums, k) {
   return nums[k - 1]
 }
 ```
+
+### 小顶堆
+
+```javascript
+/**
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number}
+ */
+var findKthLargest = function (nums, k) {
+  nums.sort((a, b) => b - a)
+
+  return nums[k - 1]
+}
+```
