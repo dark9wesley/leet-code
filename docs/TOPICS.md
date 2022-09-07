@@ -72,4 +72,6 @@
 
 [739. 每日温度](../problemset/daily-temperatures/README.md)
 
+[912. 排序数组](../problemset/sort-an-array/README.md)
+
 [1382. 将二叉搜索树变平衡](../problemset/balance-a-binary-search-tree/README.md)
