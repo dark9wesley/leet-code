@@ -50,3 +50,26 @@ var sortArray = function (nums) {
 ```
 
 ### 选择排序
+
+```javascript
+/**
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+var sortArray = function (nums) {
+  let len = nums.length
+  for (let i = 0; i < len - 1; i++) {
+    let min = i
+    for (let j = i; j < len; j++) {
+      if (nums[j] < nums[min]) {
+        min = j
+      }
+    }
+
+    if (i !== min) {
+      ;[nums[i], nums[min]] = [nums[min], nums[i]]
+    }
+  }
+  return nums
+}
+```
