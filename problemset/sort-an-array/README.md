@@ -73,3 +73,25 @@ var sortArray = function (nums) {
   return nums
 }
 ```
+
+### 插入排序
+
+```javascript
+/**
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+var sortArray = function (nums) {
+  let len = nums.length
+  for (let i = 1; i < len; i++) {
+    let temp = nums[i]
+    let j = i
+    while (j > 0 && nums[j - 1] > temp) {
+      nums[j] = nums[j - 1]
+      j--
+    }
+    nums[j] = temp
+  }
+  return nums
+}
+```
