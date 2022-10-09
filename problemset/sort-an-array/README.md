@@ -95,3 +95,47 @@ var sortArray = function (nums) {
   return nums
 }
 ```
+
+### 归并排序
+
+```javascript
+/**
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+var sortArray = function (nums) {
+  if (nums.length <= 1) {
+    return nums
+  }
+  const len = nums.length
+  const mid = Math.floor(len / 2)
+  const left = sortArray(nums.slice(0, mid))
+  const right = sortArray(nums.slice(mid, len))
+  return sortNums(left, right)
+}
+
+function sortNums(arr1, arr2) {
+  let i = 0
+  let j = 0
+  let result = []
+  const len1 = arr1.length
+  const len2 = arr2.length
+  while (i < len1 && j < len2) {
+    if (arr1[i] < arr2[j]) {
+      result.push(arr1[i])
+      i++
+    } else {
+      result.push(arr2[j])
+      j++
+    }
+  }
+  if (i < len1) {
+    result = result.concat(arr1.slice(i))
+  }
+  if (j < len2) {
+    result = result.concat(arr2.slice(j))
+  }
+
+  return result
+}
+```
