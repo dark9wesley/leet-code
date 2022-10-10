@@ -154,3 +154,60 @@ function sortNums(arr1, arr2) {
   return result
 }
 ```
+
+### 快速排序
+
+快速排序在基本思想上和归并排序是一致的，仍然坚持“分而治之”的原则不动摇。区别在于，快速排序并不会把真的数组分割开来再合并到一个新数组中去，而是直接在原有的数组内部进行排序。
+
+快速排序会将原始的数组筛选成较小和较大的两个子数组，然后递归地排序两个子数组。
+
+```javascript
+/**
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+var sortArray = function (nums, left = 0, right = nums.length - 1) {
+  if (nums.length > 1) {
+    // lineIndex表示下一次划分左右子数组的索引位
+    const index = partition(nums, left, right)
+    // 如果左边子数组的长度不小于1，则递归快排这个子数组
+    if (left < index - 1) {
+      // 左子数组以 lineIndex-1 为右边界
+      sortArray(nums, left, index - 1)
+    }
+    // 如果右边子数组的长度不小于1，则递归快排这个子数组
+    if (index < right) {
+      // 右子数组以 lineIndex 为左边界
+      sortArray(nums, index, right)
+    }
+  }
+  return nums
+}
+
+function partition(arr, left, right) {
+  // 初始化左右指针
+  let i = left
+  let j = right
+  // 基准值默认取中间位置的元素
+  let pivotValue = arr[Math.floor(left + (right - left) / 2)]
+  // 当左右指针不越界时，循环执行以下逻辑
+  while (i <= j) {
+    // 左指针所指元素若小于基准值，则右移左指针
+    while (arr[i] < pivotValue) {
+      i++
+    }
+    // 右指针所指元素大于基准值，则左移右指针
+    while (arr[j] > pivotValue) {
+      j--
+    }
+    // 若i<=j，则意味着基准值左边存在较大元素或右边存在较小元素，交换两个元素确保左右两侧有序
+    if (i <= j) {
+      ;[arr[i], arr[j]] = [arr[j], arr[i]]
+      i++
+      j--
+    }
+  }
+  // 返回左指针索引作为下一次划分左右子数组的依据
+  return i
+}
+```
