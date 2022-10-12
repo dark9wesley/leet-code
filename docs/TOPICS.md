@@ -18,6 +18,8 @@
 
 [46. 全排列](../problemset/permutations/README.md)
 
+[70. 爬楼梯](../problemset/climbing-stairs/README.md)
+
 [77. 组合](../problemset/combinations/README.md)
 
 [78. 子集](../problemset/subsets/README.md)
