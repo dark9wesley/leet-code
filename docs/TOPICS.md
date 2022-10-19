@@ -52,6 +52,8 @@
 
 [155. 最小栈](../problemset/min-stack/README.md)
 
+[198. 打家劫舍](../problemset/house-robber/README.md)
+
 [206. 反转链表](../problemset/reverse-linked-list/README.md)
 
 [211. 添加与搜索单词 - 数据结构设计](../problemset/design-add-and-search-words-data-structure/README.md)
