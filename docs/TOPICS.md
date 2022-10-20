@@ -16,6 +16,8 @@
 
 [21. 合并两个有序链表](../problemset/merge-two-sorted-lists/README.md)
 
+[35. 搜索插入位置](../problemset/search-insert-position/README.md)
+
 [46. 全排列](../problemset/permutations/README.md)
 
 [70. 爬楼梯](../problemset/climbing-stairs/README.md)
