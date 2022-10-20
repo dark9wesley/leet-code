@@ -78,6 +78,8 @@
 
 [701. 二叉搜索树中的插入操作](../problemset/insert-into-a-binary-search-tree/README.md)
 
+[704. 二分查找](../problemset/binary-search/README.md)
+
 [739. 每日温度](../problemset/daily-temperatures/README.md)
 
 [912. 排序数组](../problemset/sort-an-array/README.md)
