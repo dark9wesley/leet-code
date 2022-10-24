@@ -22,6 +22,8 @@
 
 [46. 全排列](../problemset/permutations/README.md)
 
+[69. x 的平方根](../problemset/sqrtx/README.md)
+
 [70. 爬楼梯](../problemset/climbing-stairs/README.md)
 
 [77. 组合](../problemset/combinations/README.md)
