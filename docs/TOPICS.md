@@ -70,6 +70,8 @@
 
 [226. 翻转二叉树](../problemset/invert-binary-tree/README.md)
 
+[231. 2 的幂](../problemset/power-of-two/README.md)
+
 [232. 用栈实现队列](../problemset/implement-queue-using-stacks/README.md)
 
 [239. 滑动窗口最大值](../problemset/sliding-window-maximum/README.md)
