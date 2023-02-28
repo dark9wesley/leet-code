@@ -1,7 +1,7 @@
 # 环形链表 II
 
 > 难度：中等
->
+> 次数: 2
 > https://leetcode.cn/problems/linked-list-cycle-ii/
 
 ## 题目
@@ -46,14 +46,9 @@
 
 ## 解法
 
+### flag
+
 ```javascript
-/**
- * Definition for singly-linked list.
- * function ListNode(val, next) {
- *     this.val = (val===undefined ? 0 : val)
- *     this.next = (next===undefined ? null : next)
- * }
- */
 /**
  * @param {ListNode} head
  * @return {ListNode}
@@ -65,6 +60,27 @@ var detectCycle = function (head) {
       return cur
     }
     cur.flag = true
+    cur = cur.next
+  }
+  return null
+}
+```
+
+### Set
+
+```javascript
+/**
+ * @param {ListNode} head
+ * @return {ListNode}
+ */
+var detectCycle = function (head) {
+  let set = new Set()
+  let cur = head
+  while (cur) {
+    if (set.has(cur)) {
+      return cur
+    }
+    set.add(cur)
     cur = cur.next
   }
   return null
