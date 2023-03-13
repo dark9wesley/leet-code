@@ -1,7 +1,7 @@
 # 有效的括号
 
 > 难度：简单
->
+> 次数：2
 > https://leetcode.cn/problems/valid-parentheses
 
 ## 题目
