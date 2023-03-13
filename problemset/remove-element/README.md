@@ -1,7 +1,9 @@
 # 移除元素
 
 > 难度：简单
+>
 > 次数：2
+>
 > https://leetcode.cn/problems/remove-element
 
 ## 题目
