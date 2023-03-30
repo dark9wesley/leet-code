@@ -1,7 +1,7 @@
 # 二分查找
 
 > 难度：简单
->
+> 次数：2
 > https://leetcode.cn/problems/binary-search
 
 ## 题目
