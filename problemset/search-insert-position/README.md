@@ -1,7 +1,9 @@
 # 搜索插入位置
 
 > 难度：简单
+
 > 次数：2
+
 > https://leetcode.cn/problems/search-insert-position
 
 ## 题目
