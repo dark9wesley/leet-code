@@ -18,6 +18,8 @@
 
 [24. 合并两个有序链表](../problemset/swap-nodes-in-pairs/README.md)
 
+[26. 删除有序数组中的重复项](../problemset/remove-duplicates-from-sorted-array/README.md)
+
 [27. 移除元素](../problemset/remove-element/README.md)
 
 [34. 在排序数组中查找元素的第一个和最后一个位置](../problemset/find-first-and-last-position-of-element-in-sorted-array/README.md)
