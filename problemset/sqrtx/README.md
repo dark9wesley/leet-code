@@ -1,7 +1,9 @@
 # x 的平方根
 
 > 难度：简单
->
+
+> 次数：2
+
 > https://leetcode.cn/problems/sqrtx
 
 ## 题目
