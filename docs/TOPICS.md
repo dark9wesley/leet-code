@@ -106,4 +106,6 @@
 
 [912. 排序数组](../problemset/sort-an-array/README.md)
 
+[977. 有序数组的平方](../problemset/squares-of-a-sorted-array/README.md)
+
 [1382. 将二叉搜索树变平衡](../problemset/balance-a-binary-search-tree/README.md)
