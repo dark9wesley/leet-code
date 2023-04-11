@@ -106,6 +106,8 @@
 
 [844. 比较含退格的字符串](../problemset/backspace-string-compare/README.md)
 
+[904. 水果成篮](../problemset/fruit-into-baskets/README.md)
+
 [912. 排序数组](../problemset/sort-an-array/README.md)
 
 [977. 有序数组的平方](../problemset/squares-of-a-sorted-array/README.md)
