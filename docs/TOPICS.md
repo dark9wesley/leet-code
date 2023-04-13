@@ -72,6 +72,8 @@
 
 [198. 打家劫舍](../problemset/house-robber/README.md)
 
+[203. 移除链表元素](../problemset/remove-linked-list-elements/README.md)
+
 [206. 反转链表](../problemset/reverse-linked-list/README.md)
 
 [209. 长度最小的子数组](../problemset/minimum-size-subarray-sum/README.md)
