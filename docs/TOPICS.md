@@ -110,6 +110,8 @@
 
 [704. 二分查找](../problemset/binary-search/README.md)
 
+[707. 设计链表](../problemset/design-linked-list/README.md)
+
 [739. 每日温度](../problemset/daily-temperatures/README.md)
 
 [844. 比较含退格的字符串](../problemset/backspace-string-compare/README.md)
