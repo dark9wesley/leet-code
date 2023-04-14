@@ -2,11 +2,13 @@
 
 > 难度：中等
 >
+> 次数：2
+>
 > https://leetcode.cn/problems/remove-nth-node-from-end-of-list/
 
 ## 题目
 
-给你一个链表，删除链表的倒数第  n  个结点，并且返回链表的头结点。
+给你一个链表，删除链表的倒数第`n`个结点，并且返回链表的头结点。
 
 ### 示例
 
@@ -49,12 +51,10 @@
  * @return {ListNode}
  */
 const removeNthFromEnd = function (head, n) {
-  const dummy = new ListNode()
-  dummy.next = head
+  const dummy = new ListNode(0, head)
   let prev = (cur = dummy)
-  while (n > 0) {
+  while (n-- > 0) {
     cur = cur.next
-    n--
   }
 
   while (cur.next) {
