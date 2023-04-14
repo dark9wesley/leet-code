@@ -70,6 +70,8 @@
 
 [155. 最小栈](../problemset/min-stack/README.md)
 
+[160. 相交链表](../problemset/intersection-of-two-linked-lists/README.md)
+
 [198. 打家劫舍](../problemset/house-robber/README.md)
 
 [203. 移除链表元素](../problemset/remove-linked-list-elements/README.md)
