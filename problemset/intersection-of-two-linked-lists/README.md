@@ -2,7 +2,7 @@
 
 > 难度：简单
 >
-> 次数：1
+> 次数：2
 >
 > https://leetcode.cn/problems/intersection-of-two-linked-lists
 
@@ -84,5 +84,52 @@ const getIntersectionNode = function (headA, headB) {
   }
 
   return null
+}
+```
+
+### 指针
+
+```javascript
+/**
+ * @param {ListNode} headA
+ * @param {ListNode} headB
+ * @return {ListNode}
+ */
+const getIntersectionNode = function (headA, headB) {
+  const getLen = (head) => {
+    let len = 0
+    let cur = head
+    while (cur) {
+      cur = cur.next
+      len++
+    }
+    return len
+  }
+
+  let lenA = getLen(headA)
+  let lenB = getLen(headB)
+  let curA = headA
+  let curB = headB
+
+  if (lenA < lenB) {
+    // 交换变量注意加 “分号” ，两个数组交换变量在同一个作用域下时
+    // 如果不加分号，下面两条代码等同于一条代码: [curA, curB] = [lenB, lenA]
+    ;[curA, curB] = [curB, curA]
+    ;[lenA, lenB] = [lenB, lenA]
+  }
+
+  let diff = lenA - lenB
+
+  while (diff) {
+    curA = curA.next
+    diff--
+  }
+
+  while (curA && curA !== curB) {
+    curA = curA.next
+    curB = curB.next
+  }
+
+  return curA
 }
 ```
