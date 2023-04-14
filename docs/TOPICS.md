@@ -16,7 +16,7 @@
 
 [21. 合并两个有序链表](../problemset/merge-two-sorted-lists/README.md)
 
-[24. 合并两个有序链表](../problemset/swap-nodes-in-pairs/README.md)
+[24. 两两交换链表中的节点](../problemset/swap-nodes-in-pairs/README.md)
 
 [26. 删除有序数组中的重复项](../problemset/remove-duplicates-from-sorted-array/README.md)
 

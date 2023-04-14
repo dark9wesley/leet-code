@@ -2,6 +2,8 @@
 
 > 难度：中等
 >
+> 次数：2
+>
 > https://leetcode.cn/problems/swap-nodes-in-pairs
 
 ## 题目
@@ -46,10 +48,9 @@
  * @return {ListNode}
  */
 var swapPairs = function (head) {
-  let dummy = new ListNode()
-  dummy.next = head
+  let dummy = new ListNode(0, head)
   let temp = dummy
-  while (temp.next !== null && temp.next.next !== null) {
+  while (temp.next && temp.next.next) {
     let node1 = temp.next
     let node2 = temp.next.next
     temp.next = node2
