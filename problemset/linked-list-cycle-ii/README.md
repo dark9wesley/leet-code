@@ -2,7 +2,7 @@
 
 > 难度：中等
 >
-> 次数: 2
+> 次数: 3
 >
 > https://leetcode.cn/problems/linked-list-cycle-ii/
 
@@ -86,5 +86,35 @@ var detectCycle = function (head) {
     cur = cur.next
   }
   return null
+}
+```
+
+### 快慢指针
+
+```javascript
+const detectCycle = function (head) {
+  if (!head || !head.next) {
+    return null
+  }
+  let slow = head.next
+  let fast = head.next.next
+
+  while (fast && fast.next && fast !== slow) {
+    fast = fast.next.next
+    slow = slow.next
+  }
+
+  if (!fast || !fast.next) {
+    return null
+  }
+
+  slow = head
+
+  while (slow !== fast) {
+    slow = slow.next
+    fast = fast.next
+  }
+
+  return slow  
 }
 ```
