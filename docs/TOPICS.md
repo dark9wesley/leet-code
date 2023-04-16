@@ -94,6 +94,8 @@
 
 [239. 滑动窗口最大值](../problemset/sliding-window-maximum/README.md)
 
+[242. 有效的字母异位词](../problemset/valid-anagram/README.md)
+
 [283. 移动零](../problemset/move-zeroes/README.md)
 
 [322. 零钱兑换](../problemset/coin-change/README.md)
