@@ -2,7 +2,7 @@
 
 > 难度：简单
 >
-> 次数：1
+> 次数：2
 >
 > https://leetcode.cn/problems/valid-anagram
 
@@ -49,6 +49,32 @@ const isAnagram = function (s, t) {
     if (i !== 0) {
       return false
     }
+  }
+
+  return true
+}
+```
+
+### 哈希表
+
+```javascript
+const isAnagram = function (s, t) {
+  if (s.length !== t.length) {
+    return false
+  }
+
+  let hashArr = new Array(26).fill(0)
+  let base = 'a'.charCodeAt()
+
+  for (const i of s) {
+    hashArr[i.charCodeAt() - base]++
+  }
+
+  for (const i of t) {
+    if (!hashArr[i.charCodeAt() - base]) {
+      return false
+    }
+    hashArr[i.charCodeAt() - base]--
   }
 
   return true
