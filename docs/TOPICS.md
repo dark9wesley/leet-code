@@ -102,6 +102,8 @@
 
 [322. 零钱兑换](../problemset/coin-change/README.md)
 
+[349. 两个数组的交集](../problemset/intersection-of-two-arrays/README.md)
+
 [367. 有效的完全平方数](../problemset/valid-perfect-square/README.md)
 
 [383. 赎金信](../problemset/ransom-note/README.md)
