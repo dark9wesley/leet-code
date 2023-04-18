@@ -76,6 +76,8 @@
 
 [198. 打家劫舍](../problemset/house-robber/README.md)
 
+[202. 快乐数](../problemset/happy-number/README.md)
+
 [203. 移除链表元素](../problemset/remove-linked-list-elements/README.md)
 
 [206. 反转链表](../problemset/reverse-linked-list/README.md)
