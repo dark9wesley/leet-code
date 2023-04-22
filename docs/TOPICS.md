@@ -147,3 +147,5 @@
 [977. 有序数组的平方](../problemset/squares-of-a-sorted-array/README.md)
 
 [1382. 将二叉搜索树变平衡](../problemset/balance-a-binary-search-tree/README.md)
+
+[剑指 Offer 05. 替换空格](../problemset/剑指_Offer_05_替换空格/README.md)
