@@ -151,3 +151,5 @@
 [1382. 将二叉搜索树变平衡](../problemset/balance-a-binary-search-tree/README.md)
 
 [剑指 Offer 05. 替换空格](../problemset/剑指_Offer_05_替换空格/README.md)
+
+[剑指 Offer 58 - II. 左旋转字符串](../problemset/剑指_Offer_58_II_左旋转字符串/README.md)
