@@ -126,6 +126,8 @@
 
 [454. 四数相加 II](../problemset/4sum-ii/README.md)
 
+[459. 重复的子字符串](../problemset/repeated-substring-pattern/README.md)
+
 [509. 斐波那契数](../problemset/fibonacci-number/README.md)
 
 [541. 反转字符串 II](../problemset/reverse-string-ii/README.md)
