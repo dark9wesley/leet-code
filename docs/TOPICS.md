@@ -24,6 +24,8 @@
 
 [27. 移除元素](../problemset/remove-element/README.md)
 
+[28. 找出字符串中第一个匹配项的下标](../problemset/find-the-index-of-the-first-occurrence-in-a-string/README.md)
+
 [34. 在排序数组中查找元素的第一个和最后一个位置](../problemset/find-first-and-last-position-of-element-in-sorted-array/README.md)
 
 [35. 搜索插入位置](../problemset/search-insert-position/README.md)
