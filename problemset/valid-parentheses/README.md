@@ -2,7 +2,7 @@
 
 > 难度：简单
 >
-> 次数：2
+> 次数：3
 >
 > https://leetcode.cn/problems/valid-parentheses
 
