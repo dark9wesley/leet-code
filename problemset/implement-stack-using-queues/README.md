@@ -2,7 +2,7 @@
 
 > 难度：简单
 >
-> 次数：1
+> 次数：2
 >
 > https://leetcode.cn/problems/implement-stack-using-queues
 
@@ -45,7 +45,6 @@ myStack.empty(); // 返回 False
 ```javascript
 var MyStack = function () {
   this.queue = []
-  this._queue = []
 }
 
 /**
@@ -60,23 +59,20 @@ MyStack.prototype.push = function (x) {
  * @return {number}
  */
 MyStack.prototype.pop = function () {
-  while (this.queue.length > 1) {
-    const element = this.queue.shift()
-    this._queue.push(element)
+  let size = this.queue.length
+  while (size-- > 1) {
+    this.queue.push(this.queue.shift())
   }
-  const ans = this.queue.shift()
-  while (this._queue.length) {
-    const element = this._queue.shift()
-    this.queue.push(element)
-  }
-  return ans
+  return this.queue.shift()
 }
 
 /**
  * @return {number}
  */
 MyStack.prototype.top = function () {
-  return this.queue.slice(-1)[0]
+  let top = this.pop()
+  this.queue.push(top)
+  return top
 }
 
 /**
