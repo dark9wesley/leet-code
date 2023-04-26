@@ -74,6 +74,8 @@
 
 [145. 二叉树的后序遍历](../problemset/binary-tree-postorder-traversal/README.md)
 
+[150. 逆波兰表达式求值](../problemset/evaluate-reverse-polish-notation/README.md)
+
 [151. 反转字符串中的单词](../problemset/reverse-words-in-a-string/README.md)
 
 [155. 最小栈](../problemset/min-stack/README.md)
