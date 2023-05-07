@@ -114,6 +114,8 @@
 
 [344. 反转字符串](../problemset/reverse-string/README.md)
 
+[347. 前 K 个高频元素](../problemset/top-k-frequent-elements/README.md)
+
 [349. 两个数组的交集](../problemset/intersection-of-two-arrays/README.md)
 
 [350. 两个数组的交集 II](../problemset/intersection-of-two-arrays-ii/README.md)
