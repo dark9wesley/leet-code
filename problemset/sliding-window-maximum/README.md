@@ -2,6 +2,8 @@
 
 > 难度：困难
 >
+> 次数：2
+>
 > https://leetcode.cn/problems/sliding-window-maximum
 
 ## 题目
