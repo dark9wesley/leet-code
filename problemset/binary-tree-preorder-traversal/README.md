@@ -2,6 +2,8 @@
 
 > 难度：简单
 >
+> 次数：2
+>
 > https://leetcode.cn/problems/binary-tree-preorder-traversal
 
 ## 题目
