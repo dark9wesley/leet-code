@@ -2,6 +2,8 @@
 
 > 难度：中等
 >
+> 次数: 2
+>
 > https://leetcode.cn/problems/binary-tree-level-order-traversal
 
 ## 题目
