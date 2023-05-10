@@ -8,7 +8,8 @@
 
 ## 题目
 
-给你两个单链表的头节点`headA`和`headB`，请你找出并返回两个单链表相交的起始节点。如果两个链表不存在相交节点，返回`null`。
+给你两个单链表的头节点`headA`和`headB`，请你找出并返回两个单链表相交的起始节点。
+如果两个链表不存在相交节点，返回`null`。
 
 图示两个链表在节点`c1`开始相交：
 
@@ -96,7 +97,7 @@ const getIntersectionNode = function (headA, headB) {
  * @return {ListNode}
  */
 const getIntersectionNode = function (headA, headB) {
-  const getLen = (head) => {
+  const getLen = head => {
     let len = 0
     let cur = head
     while (cur) {

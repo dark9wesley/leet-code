@@ -8,7 +8,8 @@
 
 ## 题目
 
-给定`s`和`t`两个字符串，当它们分别被输入到空白的文本编辑器后，如果两者相等，返回`true`。`#`代表退格字符。
+给定`s`和`t`两个字符串，当它们分别被输入到空白的文本编辑器后，如果两者相等，返
+回`true`。`#`代表退格字符。
 
 **注意:** 如果对空文本输入退格字符，文本继续为空。
 
@@ -48,7 +49,7 @@
  * @param {string} t
  * @return {boolean}
  */
-var backspaceCompare = function(s, t) {
+var backspaceCompare = function (s, t) {
   let i = s.length - 1
   let j = t.length - 1
   let skipI = 0
@@ -59,7 +60,7 @@ var backspaceCompare = function(s, t) {
       if (s[i] === '#') {
         i--
         skipI++
-      } else if (skipI > 0){
+      } else if (skipI > 0) {
         i--
         skipI--
       } else break
@@ -69,7 +70,7 @@ var backspaceCompare = function(s, t) {
       if (t[j] === '#') {
         j--
         skipJ++
-      } else if (skipJ > 0){
+      } else if (skipJ > 0) {
         j--
         skipJ--
       } else break
@@ -84,5 +85,5 @@ var backspaceCompare = function(s, t) {
   }
 
   return true
-};
+}
 ```

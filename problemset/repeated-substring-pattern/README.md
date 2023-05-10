@@ -62,7 +62,7 @@ var repeatedSubstringPattern = function (s) {
     return false
   }
 
-  function getNext (s) {
+  function getNext(s) {
     let next = []
     let j = 0
     next.push(j)
@@ -79,7 +79,10 @@ var repeatedSubstringPattern = function (s) {
   }
 
   let next = getNext(s)
-  if (next[next.length - 1] !== 0 && s.length % (s.length - next[next.length - 1]) === 0) {
+  if (
+    next[next.length - 1] !== 0 &&
+    s.length % (s.length - next[next.length - 1]) === 0
+  ) {
     return true
   }
   return false

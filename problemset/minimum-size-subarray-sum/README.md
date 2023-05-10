@@ -10,7 +10,9 @@
 
 给定一个含有`n`个正整数的数组和一个正整数`target`。
 
-找出该数组中满足其和`≥ target`的长度最小的**连续子数组** `[numsl, numsl+1, ..., numsr-1, numsr]`，并返回其长度。如果不存在符合条件的子数组，返回`0`。
+找出该数组中满足其和`≥ target`的长度最小的**连续子数
+组** `[numsl, numsl+1, ..., numsr-1, numsr]`，并返回其长度。如果不存在符合条件的
+子数组，返回`0`。
 
 ### 示例
 
@@ -46,15 +48,15 @@
  * @param {number[]} nums
  * @return {number}
  */
-var minSubArrayLen = function(target, nums) {
+var minSubArrayLen = function (target, nums) {
   let len = nums.length
-  let start = end = 0
+  let start = (end = 0)
   let sum = 0
   let ans = Infinity
 
-  while(end < len){
+  while (end < len) {
     sum += nums[end]
-    while(sum >= target){
+    while (sum >= target) {
       ans = Math.min(ans, end - start + 1)
       sum = sum - nums[start]
       start++

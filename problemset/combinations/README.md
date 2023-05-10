@@ -46,7 +46,7 @@ var combine = function (n, k) {
   const res = []
   const cur = []
 
-  const dfs = (nth) => {
+  const dfs = nth => {
     if (cur.length === k) {
       res.push(cur.slice())
       return

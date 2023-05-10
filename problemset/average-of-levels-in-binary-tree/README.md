@@ -1,14 +1,15 @@
 # 二叉树的层平均值
 
 > 难度：简单
-> 
+>
 > 次数：1
-> 
+>
 > https://leetcode.cn/problems/average-of-levels-in-binary-tree
 
 ## 题目
 
-给定一个非空二叉树的根节点`root`, 以数组的形式返回每一层节点的平均值。与实际答案相差`10^-5`以内的答案可以被接受。
+给定一个非空二叉树的根节点`root`, 以数组的形式返回每一层节点的平均值。与实际答案
+相差`10^-5`以内的答案可以被接受。
 
 ### 示例
 
@@ -24,7 +25,6 @@
 ```
 
 #### 示例 2：
-
 
 ![avg2-tree](https://assets.leetcode.com/uploads/2021/03/09/avg2-tree.jpg)
 

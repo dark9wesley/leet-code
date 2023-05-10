@@ -8,7 +8,8 @@
 
 ## 题目
 
-给你一个按**非递减顺序**排序的整数数组`nums`，返回**每个数字的平方**组成的新数组，要求也按**非递减顺序**排序。
+给你一个按**非递减顺序**排序的整数数组`nums`，返回**每个数字的平方**组成的新数组
+，要求也按**非递减顺序**排序。
 
 ### 示例
 
@@ -37,17 +38,18 @@
  * @param {number[]} nums
  * @return {number[]}
  */
-var sortedSquares = function(nums) {
+var sortedSquares = function (nums) {
   let len = nums.length
   let res = new Array(len)
-  let i = 0, j = k = len - 1
-  while(i <= j){
+  let i = 0,
+    j = (k = len - 1)
+  while (i <= j) {
     const i2 = nums[i] * nums[i]
     const j2 = nums[j] * nums[j]
-    if(i2 > j2){
+    if (i2 > j2) {
       res[k--] = i2
       i++
-    }else{
+    } else {
       res[k--] = j2
       j--
     }

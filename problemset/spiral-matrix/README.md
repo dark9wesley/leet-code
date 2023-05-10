@@ -8,7 +8,8 @@
 
 ## 题目
 
-给你一个`m`行`n`列的矩阵`matrix`，请按照**顺时针螺旋顺序**，返回矩阵中的所有元素。
+给你一个`m`行`n`列的矩阵`matrix`，请按照**顺时针螺旋顺序**，返回矩阵中的所有元素
+。
 
 ### 示例
 
@@ -53,7 +54,7 @@ const spiralOrder = function (matrix) {
     return matrix[0]
   }
   if (n === 1) {
-    return matrix.map((item) => item[0])
+    return matrix.map(item => item[0])
   }
 
   while (loop--) {

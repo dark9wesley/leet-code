@@ -22,14 +22,14 @@
 ### 双指针
 
 ```javascript
-var replaceSpace = function(s) {
+var replaceSpace = function (s) {
   let strArr = Array.from(s)
   let count = 0
 
   for (let i = 0; i < strArr.length; i++) {
-      if (strArr[i] === ' ') {
-        count++
-      }
+    if (strArr[i] === ' ') {
+      count++
+    }
   }
 
   let left = strArr.length - 1
@@ -37,12 +37,12 @@ var replaceSpace = function(s) {
 
   while (left >= 0) {
     if (strArr[left] === ' ') {
-        strArr[right--] = '0'
-        strArr[right--] = '2'
-        strArr[right--] = '%'
-        left--
+      strArr[right--] = '0'
+      strArr[right--] = '2'
+      strArr[right--] = '%'
+      left--
     } else {
-        strArr[right--] = strArr[left--]
+      strArr[right--] = strArr[left--]
     }
   }
 
@@ -53,7 +53,7 @@ var replaceSpace = function(s) {
 ### 正则
 
 ```javascript
-var replaceSpace = function(s) {  
+var replaceSpace = function (s) {
   return s.replace(/ /g, '%20')
 }
 ```
@@ -61,7 +61,7 @@ var replaceSpace = function(s) {
 ### split + join
 
 ```javascript
-var replaceSpace = function(s) {  
+var replaceSpace = function (s) {
   return s.split(' ').join('%20')
 }
 ```

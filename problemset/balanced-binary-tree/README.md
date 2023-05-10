@@ -56,7 +56,7 @@
  */
 var isBalanced = function (root) {
   let flag = true
-  const dfs = (root) => {
+  const dfs = root => {
     if (!root || !flag) {
       return 0
     }
