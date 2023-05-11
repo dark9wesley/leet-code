@@ -62,6 +62,8 @@
 
 [102. 二叉树的层序遍历](../problemset/binary-tree-level-order-traversal/README.md)
 
+[104. 二叉树的最大深度](../problemset/maximum-depth-of-binary-tree/README.md)
+
 [107. 二叉树的层序遍历 II](../problemset/binary-tree-level-order-traversal-II/README.md)
 
 [108. 将有序数组转换为二叉搜索树](../problemset/convert-sorted-array-to-binary-search-tree/README.md)
