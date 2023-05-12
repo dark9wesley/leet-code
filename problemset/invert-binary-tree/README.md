@@ -2,6 +2,8 @@
 
 > 难度：简单
 >
+> 次数：2
+>
 > https://leetcode.cn/problems/invert-binary-tree
 
 ## 题目
@@ -37,6 +39,8 @@
 
 ## 解法
 
+### 递归
+
 ```javascript
 /**
  * Definition for a binary tree node.
@@ -58,6 +62,48 @@ var invertTree = function (root) {
 
   root.left = right
   root.right = left
+
+  return root
+}
+```
+
+### 迭代
+
+```javascript
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val, left, right) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.left = (left===undefined ? null : left)
+ *     this.right = (right===undefined ? null : right)
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @return {TreeNode}
+ */
+var invertTree = function (root) {
+  if (!root) {
+    return root
+  }
+  const invertNode = root => {
+    let left = root.left
+    root.left = root.right
+    root.right = left
+  }
+
+  const stack = [root]
+
+  while (stack.length) {
+    const cur = stack.pop()
+    invertNode(cur)
+    if (cur.right) {
+      stack.push(cur.right)
+    }
+    if (cur.left) {
+      stack.push(cur.left)
+    }
+  }
 
   return root
 }
