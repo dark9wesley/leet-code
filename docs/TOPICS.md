@@ -60,6 +60,8 @@
 
 [98. 验证二叉搜索树](../problemset/validate-binary-search-tree/README.md)
 
+[101. 对称二叉树](../problemset/symmetric-tree/README.md)
+
 [102. 二叉树的层序遍历](../problemset/binary-tree-level-order-traversal/README.md)
 
 [104. 二叉树的最大深度](../problemset/maximum-depth-of-binary-tree/README.md)
