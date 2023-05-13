@@ -2,7 +2,7 @@
 
 > 难度：简单
 >
-> 次数：1
+> 次数：2
 >
 > https://leetcode.cn/problems/symmetric-tree
 
@@ -66,5 +66,47 @@ var isSymmetric = function (root) {
     return true
   }
   return compare(left, right)
+}
+```
+
+### 迭代
+
+```javascript
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val, left, right) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.left = (left===undefined ? null : left)
+ *     this.right = (right===undefined ? null : right)
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @return {boolean}
+ */
+var isSymmetric = function (root) {
+  if (!root) {
+    return true
+  }
+  const stack = [root.right, root.left]
+  while (stack.length) {
+    const left = stack.pop()
+    const right = stack.pop()
+    if (
+      (left !== null && right === null) ||
+      (right !== null && left === null)
+    ) {
+      return false
+    } else if (left === null && right === null) {
+      continue
+    } else if (left.val !== right.val) {
+      return false
+    }
+    stack.push(left.left)
+    stack.push(right.right)
+    stack.push(left.right)
+    stack.push(right.left)
+  }
+  return true
 }
 ```
