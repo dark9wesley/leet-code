@@ -2,7 +2,7 @@
 
 > 难度：简单
 >
-> 次数：1
+> 次数：2
 >
 > https://leetcode.cn/problems/subtree-of-another-tree
 
@@ -74,5 +74,52 @@ var isSubtree = function (root, subRoot) {
   }
 
   return isSubtree(root.left, subRoot) || isSubtree(root.right, subRoot)
+}
+```
+
+### 迭代
+
+```javascript
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val, left, right) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.left = (left===undefined ? null : left)
+ *     this.right = (right===undefined ? null : right)
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @param {TreeNode} subRoot
+ * @return {boolean}
+ */
+var isSubtree = function (root, subRoot) {
+  const compare = (left, right) => {
+    if (!left && !right) {
+      return true
+    }
+
+    if (!left || !right || left.val !== right.val) {
+      return false
+    }
+
+    return compare(left.left, right.left) && compare(left.right, right.right)
+  }
+
+  if (!root) {
+    return false
+  }
+  const queue = [root]
+
+  while (queue.length) {
+    const top = queue.shift()
+    if (compare(top, subRoot)) {
+      return true
+    }
+    top.left && queue.push(top.left)
+    top.right && queue.push(top.right)
+  }
+
+  return false
 }
 ```
