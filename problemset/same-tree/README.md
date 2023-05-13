@@ -2,7 +2,7 @@
 
 > 难度：简单
 >
-> 次数：1
+> 次数：2
 >
 > https://leetcode.cn/problems/same-tree
 
@@ -67,5 +67,45 @@ var isSameTree = function (p, q) {
   }
 
   return isSameTree(p.left, q.left) && isSameTree(p.right, q.right)
+}
+```
+
+### 迭代
+
+```javascript
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val, left, right) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.left = (left===undefined ? null : left)
+ *     this.right = (right===undefined ? null : right)
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @return {boolean}
+ */
+var isSymmetric = function (root) {
+  const queue = [p, q]
+
+  while (queue.length) {
+    const p = queue.shift()
+    const q = queue.shift()
+
+    if ((p === null && q !== null) || (q === null && p !== null)) {
+      return false
+    } else if (p === null && q === null) {
+      continue
+    } else if (p.val !== q.val) {
+      return false
+    }
+
+    queue.push(p.left)
+    queue.push(q.left)
+    queue.push(p.right)
+    queue.push(q.right)
+  }
+
+  return true
 }
 ```
