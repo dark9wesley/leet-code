@@ -155,6 +155,8 @@
 
 [541. 反转字符串 II](../problemset/reverse-string-ii/README.md)
 
+[572. 另一棵树的子树](../problemset/subtree-of-another-tree/README.md)
+
 [637. 二叉树的层平均值](../problemset/average-of-levels-in-binary-tree/README.md)
 
 [680. 验证回文字符串 Ⅱ](../problemset/valid-palindrome-ii/README.md)
