@@ -2,7 +2,7 @@
 
 > 难度：中等
 >
-> 次数：1
+> 次数：2
 >
 > https://leetcode.cn/problems/count-complete-tree-nodes
 
@@ -72,5 +72,51 @@ var countNodes = function (root) {
     }
   }
   return num
+}
+```
+
+### 完全二叉树特性解法
+
+完全二叉树只有两种情况，情况一：就是满二叉树，情况二：最后一层叶子节点没有满。
+
+对于情况一，可以直接用 2^树深度 - 1 来计算，注意这里根节点深度为 1。
+
+对于情况二，分别递归左孩子，和右孩子，递归到某一深度一定会有左孩子或者右孩子为满
+二叉树，然后依然可以按照情况 1 来计算。
+
+```javascript
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val, left, right) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.left = (left===undefined ? null : left)
+ *     this.right = (right===undefined ? null : right)
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @return {number}
+ */
+var countNodes = function (root) {
+  if (!root) {
+    return 0
+  }
+  let leftDepth = (rightDepth = 0)
+  let left = root.left
+  let right = root.right
+  while (left) {
+    leftDepth++
+    left = left.left
+  }
+  while (right) {
+    rightDepth++
+    right = right.right
+  }
+
+  if (leftDepth === rightDepth) {
+    return Math.pow(2, leftDepth + 1) - 1
+  }
+
+  return countNodes(root.left) + countNodes(root.right) + 1
 }
 ```
