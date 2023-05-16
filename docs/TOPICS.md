@@ -125,6 +125,8 @@
 
 [242. 有效的字母异位词](../problemset/valid-anagram/README.md)
 
+[257. 二叉树的所有路径](../problemset/binary-tree-paths/README.md)
+
 [283. 移动零](../problemset/move-zeroes/README.md)
 
 [322. 零钱兑换](../problemset/coin-change/README.md)
