@@ -2,7 +2,7 @@
 
 > 难度：中等
 >
-> 次数：1
+> 次数：2
 >
 > https://leetcode.cn/problems/find-bottom-left-tree-value
 
@@ -63,5 +63,38 @@ var findBottomLeftValue = function (root) {
     }
   }
   return num
+}
+```
+
+### 递归
+
+```javascript
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val, left, right) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.left = (left===undefined ? null : left)
+ *     this.right = (right===undefined ? null : right)
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @return {number}
+ */
+var findBottomLeftValue = function (root) {
+  let maxPath = 0,
+    curNode = null
+  const dfs = (node, curPath) => {
+    if (!node.left && !node.right) {
+      if (maxPath < curPath) {
+        maxPath = curPath
+        curNode = node.val
+      }
+    }
+    node.left && dfs(node.left, curPath + 1)
+    node.right && dfs(node.right, curPath + 1)
+  }
+  dfs(root, 1)
+  return curNode
 }
 ```
