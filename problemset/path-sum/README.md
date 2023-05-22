@@ -2,7 +2,7 @@
 
 > 难度：简单
 >
-> 次数：1
+> 次数：2
 >
 > https://leetcode.cn/problems/path-sum
 
@@ -87,5 +87,58 @@ var hasPathSum = function (root, targetSum) {
   }
 
   return dfs(root, targetSum - root.val)
+}
+```
+
+### 迭代
+
+```javascript
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val, left, right) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.left = (left===undefined ? null : left)
+ *     this.right = (right===undefined ? null : right)
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @param {number} targetSum
+ * @return {boolean}
+ */
+var hasPathSum = function (root, targetSum) {
+  if (!root) {
+    return false
+  }
+
+  const queue = [
+    {
+      node: root,
+      val: 0
+    }
+  ]
+
+  while (queue.length) {
+    let { node, val } = queue.shift()
+    val += node.val
+    if (!node.left && !node.right && val === targetSum) {
+      return true
+    }
+
+    if (node.left) {
+      queue.push({
+        node: node.left,
+        val
+      })
+    }
+    if (node.right) {
+      queue.push({
+        node: node.right,
+        val
+      })
+    }
+  }
+
+  return false
 }
 ```
