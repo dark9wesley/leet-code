@@ -2,7 +2,7 @@
 
 > 难度：中等
 >
-> 次数：1
+> 次数：2
 >
 > https://leetcode.cn/problems/path-sum-ii
 
@@ -78,6 +78,60 @@ var pathSum = function (root, targetSum) {
     return result
   }
   dfs(root, root.val, [root.val])
+
+  return result
+}
+```
+
+### 迭代
+
+```javascript
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val, left, right) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.left = (left===undefined ? null : left)
+ *     this.right = (right===undefined ? null : right)
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @param {number} targetSum
+ * @return {number[][]}
+ */
+var pathSum = function (root, targetSum) {
+  let result = []
+  if (!root) {
+    return result
+  }
+  const queue = [
+    {
+      node: root,
+      sum: root.val
+    }
+  ]
+  const curArr = [[root.val]]
+  while (queue.length) {
+    const { node, sum } = queue.shift()
+    const cur = curArr.shift()
+    if (!node.left && !node.right && sum === targetSum) {
+      result.push([...cur])
+    }
+    if (node.left) {
+      curArr.push([...cur, node.left.val])
+      queue.push({
+        node: node.left,
+        sum: node.left.val + sum
+      })
+    }
+    if (node.right) {
+      curArr.push([...cur, node.right.val])
+      queue.push({
+        node: node.right,
+        sum: node.right.val + sum
+      })
+    }
+  }
 
   return result
 }
