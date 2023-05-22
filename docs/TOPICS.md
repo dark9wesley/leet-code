@@ -76,6 +76,8 @@
 
 [111. 二叉树的最小深度](../problemset/minimum-depth-of-binary-tree/README.md)
 
+[112. 路径总和](../problemset/path-sum/README.md)
+
 [116. 填充每个节点的下一个右侧节点指针](../problemset/populating-next-right-pointers-in-each-node/README.md)
 [116. 填充每个节点的下一个右侧节点指针 II](../problemset/populating-next-right-pointers-in-each-node-ii/README.md)
 

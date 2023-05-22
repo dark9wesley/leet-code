@@ -4,7 +4,7 @@
   "tabWidth": 2,
   "trailingComma": "none",
   "arrowParens": "avoid",
-  "printWidth": 80,
+  "printWidth": 200,
   "endOfLine": "auto",
   "useTabs": false,
   "overrides": [
