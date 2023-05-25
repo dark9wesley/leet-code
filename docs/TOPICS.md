@@ -173,6 +173,8 @@
 
 [572. 另一棵树的子树](../problemset/subtree-of-another-tree/README.md)
 
+[617. 合并二叉树](../problemset/merge-two-binary-trees/README.md)
+
 [637. 二叉树的层平均值](../problemset/average-of-levels-in-binary-tree/README.md)
 
 [654. 最大二叉树](../problemset/maximum-binary-tree/README.md)
