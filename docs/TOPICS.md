@@ -175,6 +175,8 @@
 
 [637. 二叉树的层平均值](../problemset/average-of-levels-in-binary-tree/README.md)
 
+[654. 最大二叉树](../problemset/maximum-binary-tree/README.md)
+
 [680. 验证回文字符串 Ⅱ](../problemset/valid-palindrome-ii/README.md)
 
 [700. 二叉搜索树中的搜索](../problemset/search-in-a-binary-search-tree/README.md)
