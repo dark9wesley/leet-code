@@ -2,6 +2,8 @@
 
 > 难度：中等
 >
+> 次数：2
+>
 > https://leetcode.cn/problems/validate-binary-search-tree
 
 ## 题目
@@ -37,6 +39,8 @@
 
 ## 解法
 
+### 递归
+
 ```javascript
 /**
  * Definition for a binary tree node.
@@ -61,5 +65,49 @@ var isValidBST = function (root) {
   }
 
   return dfs(root, -Infinity, Infinity)
+}
+```
+
+### 迭代 + 二叉搜索树特性（中序遍历是有序的）
+
+```javascript
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val, left, right) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.left = (left===undefined ? null : left)
+ *     this.right = (right===undefined ? null : right)
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @return {boolean}
+ */
+var isValidBST = function (root) {
+  const arr = []
+  const stack = [root]
+  while (stack.length) {
+    const top = stack.pop()
+    if (!top) {
+      const val = stack.pop().val
+      arr.push(val)
+      continue
+    } else {
+      top.right && stack.push(top.right)
+      stack.push(top)
+      stack.push(null)
+      top.left && stack.push(top.left)
+    }
+  }
+
+  for (let i = 0; i < arr.length - 1; i++) {
+    if (arr[i] < arr[i + 1]) {
+      continue
+    } else {
+      return false
+    }
+  }
+
+  return true
 }
 ```
