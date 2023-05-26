@@ -193,6 +193,8 @@
 
 [739. 每日温度](../problemset/daily-temperatures/README.md)
 
+[783. 二叉搜索树节点最小距离](../problemset/minimum-distance-between-bst-nodes/README.md)
+
 [844. 比较含退格的字符串](../problemset/backspace-string-compare/README.md)
 
 [904. 水果成篮](../problemset/fruit-into-baskets/README.md)
