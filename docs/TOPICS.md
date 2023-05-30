@@ -163,6 +163,8 @@
 
 [459. 重复的子字符串](../problemset/repeated-substring-pattern/README.md)
 
+[501. 二叉搜索树中的众数](../problemset/find-mode-in-binary-search-tree/README.md)
+
 [509. 斐波那契数](../problemset/fibonacci-number/README.md)
 
 [513. 找树左下角的值](../problemset/find-bottom-left-tree-value/README.md)
