@@ -129,6 +129,8 @@
 
 [232. 用栈实现队列](../problemset/implement-queue-using-stacks/README.md)
 
+[235. 二叉搜索树的最近公共祖先](../problemset/lowest-common-ancestor-of-a-binary-search-tree/README.md)
+
 [236. 二叉树的最近公共祖先](../problemset/lowest-common-ancestor-of-a-binary-tree/README.md)
 
 [239. 滑动窗口最大值](../problemset/sliding-window-maximum/README.md)
