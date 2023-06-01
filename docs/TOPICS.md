@@ -177,6 +177,8 @@
 
 [530. 二叉搜索树的最小绝对差](../problemset/minimum-absolute-difference-in-bst/README.md)
 
+[538. 把二叉搜索树转换为累加树](../problemset/convert-bst-to-greater-tree/README.md)
+
 [541. 反转字符串 II](../problemset/reverse-string-ii/README.md)
 
 [572. 另一棵树的子树](../problemset/subtree-of-another-tree/README.md)
