@@ -2,7 +2,7 @@
 
 > 难度：中等
 >
-> 次数：1
+> 次数：2
 >
 > https://leetcode.cn/problems/convert-bst-to-greater-tree
 
@@ -76,6 +76,44 @@ var convertBST = function (root) {
     }
   }
   reverseInorder(root)
+  return root
+}
+```
+
+### 迭代
+
+```javascript
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val, left, right) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.left = (left===undefined ? null : left)
+ *     this.right = (right===undefined ? null : right)
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @return {TreeNode}
+ */
+var convertBST = function (root) {
+  if (!root) {
+    return root
+  }
+  const stack = [root]
+  let prev = 0
+  while (stack.length) {
+    const top = stack.pop()
+    if (top === null) {
+      const cur = stack.pop()
+      cur.val += prev
+      prev = cur.val
+    } else {
+      top.left && stack.push(top.left)
+      stack.push(top)
+      stack.push(null)
+      top.right && stack.push(top.right)
+    }
+  }
   return root
 }
 ```
