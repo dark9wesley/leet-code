@@ -2,6 +2,8 @@
 
 > 难度：中等
 >
+> 次数：2
+>
 > https://leetcode.cn/problems/combinations
 
 ## 题目
@@ -46,20 +48,19 @@ var combine = function (n, k) {
   const res = []
   const cur = []
 
-  const dfs = nth => {
+  const backtracking = num => {
     if (cur.length === k) {
       res.push(cur.slice())
       return
     }
-
-    for (let i = nth; i <= n; i++) {
+    for (let i = num; i <= n; i++) {
       cur.push(i)
-      dfs(i + 1)
+      backtracking(i + 1)
       cur.pop()
     }
   }
 
-  dfs(1)
+  backtracking(1)
 
   return res
 }
