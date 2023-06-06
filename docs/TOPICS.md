@@ -10,6 +10,8 @@
 
 [15. 三数之和](../problemset/3sum/README.md)
 
+[17. 电话号码的字母组合](../problemset/letter-combinations-of-a-phone-number/README.md)
+
 [18. 四数之和](../problemset/4sum/README.md)
 
 [19. 删除链表的倒数第 N 个结点](../problemset/remove-nth-node-from-end-of-list/README.md)
