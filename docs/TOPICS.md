@@ -62,6 +62,8 @@
 
 [92. 反转链表 II](../problemset/reverse-linked-list-ii/README.md)
 
+[93. 复原 IP 地址](../problemset/restore-ip-addresses/README.md)
+
 [94. 二叉树的中序遍历](../problemset/binary-tree-inorder-traversal/README.md)
 
 [98. 验证二叉搜索树](../problemset/validate-binary-search-tree/README.md)
