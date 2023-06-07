@@ -91,7 +91,10 @@
 [113. 路径总和 II](../problemset/path-sum-ii/README.md)
 
 [116. 填充每个节点的下一个右侧节点指针](../problemset/populating-next-right-pointers-in-each-node/README.md)
-[116. 填充每个节点的下一个右侧节点指针 II](../problemset/populating-next-right-pointers-in-each-node-ii/README.md)
+
+[117. 填充每个节点的下一个右侧节点指针 II](../problemset/populating-next-right-pointers-in-each-node-ii/README.md)
+
+[131. 分割回文串](../problemset/palindrome-partitioning/README.md)
 
 [141. 环形链表](../problemset/linked-list-cycle/README.md)
 
