@@ -2,12 +2,13 @@
 
 > 难度：中等
 >
+> 次数：2
+>
 > https://leetcode.cn/problems/permutations
 
 ## 题目
 
-给定一个不含重复数字的数组`nums`，返回其 所有可能的全排列 。你可以**按任意顺
-序**返回答案。
+给定一个不含重复数字的数组`nums`，返回其 所有可能的全排列 。你可以**按任意顺序**返回答案。
 
 ### 示例
 
@@ -40,29 +41,32 @@
  * @return {number[][]}
  */
 var permute = function (nums) {
-  const len = nums.length
-  const visited = {}
-  const cur = []
-  const res = []
+  const length = nums.length
 
-  const dfs = nth => {
-    if (nth === len) {
-      res.push(cur.slice())
+  const res = [],
+    path = []
+
+  const used = new Array(length).fill(0)
+
+  const backTracking = k => {
+    if (path.length === length) {
+      res.push(path.slice())
       return
     }
 
-    for (let i = 0; i < len; i++) {
-      if (!visited[nums[i]]) {
-        visited[nums[i]] = true
-        cur.push(nums[i])
-        dfs(nth + 1)
-        cur.pop()
-        delete visited[nums[i]]
+    for (let i = 0; i < nums.length; i++) {
+      if (used[i] !== 0) {
+        continue
       }
+      used[i] = 1
+      path.push(nums[i])
+      backTracking(k + 1)
+      path.pop()
+      used[i] = 0
     }
   }
 
-  dfs(0)
+  backTracking(0)
 
   return res
 }
