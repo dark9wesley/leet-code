@@ -38,6 +38,8 @@
 
 [46. 全排列](../problemset/permutations/README.md)
 
+[47. 全排列 II](../problemset/permutations-ii/README.md)
+
 [49. 字母异位词分组](../problemset/group-anagrams/README.md)
 
 [54. 螺旋矩阵](../problemset/spiral-matrix/README.md)
