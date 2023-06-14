@@ -42,6 +42,8 @@
 
 [49. 字母异位词分组](../problemset/group-anagrams/README.md)
 
+[51. N 皇后](../problemset/n-queens/README.md)
+
 [54. 螺旋矩阵](../problemset/spiral-matrix/README.md)
 
 [59. 螺旋矩阵 II](../problemset/spiral-matrix-ii/README.md)
