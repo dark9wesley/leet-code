@@ -32,6 +32,8 @@
 
 [35. 搜索插入位置](../problemset/search-insert-position/README.md)
 
+[37. 解数独](../problemset/sudoku-solver/README.md)
+
 [39. 组合总和](../problemset/combination-sum/README.md)
 
 [40. 组合总和 II](../problemset/combination-sum-ii/README.md)
