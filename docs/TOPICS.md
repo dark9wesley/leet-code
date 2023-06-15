@@ -48,6 +48,8 @@
 
 [52. N 皇后 II](../problemset/n-queens-ii/README.md)
 
+[53. 最大子数组和](../problemset/maximum-subarray/README.md)
+
 [54. 螺旋矩阵](../problemset/spiral-matrix/README.md)
 
 [59. 螺旋矩阵 II](../problemset/spiral-matrix-ii/README.md)
