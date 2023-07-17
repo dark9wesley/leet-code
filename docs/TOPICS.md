@@ -252,6 +252,8 @@
 
 [977. 有序数组的平方](../problemset/squares-of-a-sorted-array/README.md)
 
+[1005. K 次取反后最大化的数组和](../problemset/maximize-sum-of-array-after-k-negations/README.md)
+
 [1047. 删除字符串中的所有相邻重复项](../problemset/remove-all-adjacent-duplicates-in-string/README.md)
 
 [1382. 将二叉搜索树变平衡](../problemset/balance-a-binary-search-tree/README.md)
