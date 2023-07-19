@@ -118,6 +118,8 @@
 
 [134. 加油站](../problemset/gas-station/README.md)
 
+[135. 分发糖果](../problemset/candy/README.md)
+
 [141. 环形链表](../problemset/linked-list-cycle/README.md)
 
 [142. 环形链表 II](../problemset/linked-list-cycle-ii/README.md)
