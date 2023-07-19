@@ -196,6 +196,8 @@
 
 [404. 左叶子之和](../problemset/sum-of-left-leaves/README.md)
 
+[406. 根据身高重建队列](../problemset/queue-reconstruction-by-height/README.md)
+
 [429. N 叉树的层序遍历](../problemset/n-ary-tree-level-order-traversal/README.md)
 
 [438. 找到字符串中所有字母异位词](../problemset/find-all-anagrams-in-a-string/README.md)
