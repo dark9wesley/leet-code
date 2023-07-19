@@ -250,6 +250,8 @@
 
 [844. 比较含退格的字符串](../problemset/backspace-string-compare/README.md)
 
+[860. 柠檬水找零](../problemset/lemonade-change/README.md)
+
 [904. 水果成篮](../problemset/fruit-into-baskets/README.md)
 
 [912. 排序数组](../problemset/sort-an-array/README.md)
