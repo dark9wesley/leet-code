@@ -56,6 +56,8 @@
 
 [55. 跳跃游戏](../problemset/jump-game/README.md)
 
+[56. 合并区间](../problemset/merge-intervals/README.md)
+
 [59. 螺旋矩阵 II](../problemset/spiral-matrix-ii/README.md)
 
 [69. x 的平方根](../problemset/sqrtx/README.md)
