@@ -268,6 +268,8 @@
 
 [912. 排序数组](../problemset/sort-an-array/README.md)
 
+[968. 监控二叉树](../problemset/binary-tree-cameras/README.md)
+
 [977. 有序数组的平方](../problemset/squares-of-a-sorted-array/README.md)
 
 [1005. K 次取反后最大化的数组和](../problemset/maximize-sum-of-array-after-k-negations/README.md)
