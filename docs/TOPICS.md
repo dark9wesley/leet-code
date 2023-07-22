@@ -252,6 +252,8 @@
 
 [707. 设计链表](../problemset/design-linked-list/README.md)
 
+[738. 单调递增的数字](../problemset/monotone-increasing-digits/README.md)
+
 [739. 每日温度](../problemset/daily-temperatures/README.md)
 
 [763. 划分字母区间](../problemset/partition-labels/README.md)
