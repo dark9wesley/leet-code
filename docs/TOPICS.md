@@ -256,6 +256,8 @@
 
 [739. 每日温度](../problemset/daily-temperatures/README.md)
 
+[746. 使用最小花费爬楼梯](../problemset/min-cost-climbing-stairs/README.md)
+
 [763. 划分字母区间](../problemset/partition-labels/README.md)
 
 [783. 二叉搜索树节点最小距离](../problemset/minimum-distance-between-bst-nodes/README.md)
