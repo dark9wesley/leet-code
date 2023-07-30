@@ -60,6 +60,8 @@
 
 [59. 螺旋矩阵 II](../problemset/spiral-matrix-ii/README.md)
 
+[62. 不同路径](../problemset/unique-paths/README.md)
+
 [69. x 的平方根](../problemset/sqrtx/README.md)
 
 [70. 爬楼梯](../problemset/climbing-stairs/README.md)
