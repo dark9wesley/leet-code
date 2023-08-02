@@ -88,6 +88,8 @@
 
 [94. 二叉树的中序遍历](../problemset/binary-tree-inorder-traversal/README.md)
 
+[96. 不同的二叉搜索树](../problemset/unique-binary-search-trees/README.md)
+
 [98. 验证二叉搜索树](../problemset/validate-binary-search-tree/README.md)
 
 [100. 相同的树](../problemset/same-tree/README.md)
