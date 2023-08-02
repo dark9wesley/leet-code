@@ -186,6 +186,8 @@
 
 [332. 重新安排行程](../problemset/reconstruct-itinerary/README.md)
 
+[343. 整数拆分](../problemset/integer-break/README.md)
+
 [344. 反转字符串](../problemset/reverse-string/README.md)
 
 [347. 前 K 个高频元素](../problemset/top-k-frequent-elements/README.md)
