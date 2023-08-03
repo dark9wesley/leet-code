@@ -208,6 +208,8 @@
 
 [406. 根据身高重建队列](../problemset/queue-reconstruction-by-height/README.md)
 
+[416. 分割等和子集](../problemset/partition-equal-subset-sum/README.md)
+
 [429. N 叉树的层序遍历](../problemset/n-ary-tree-level-order-traversal/README.md)
 
 [435. 无重叠区间](../problemset/non-overlapping-intervals/README.md)
