@@ -226,6 +226,8 @@
 
 [459. 重复的子字符串](../problemset/repeated-substring-pattern/README.md)
 
+[474. 一和零](../problemset/ones-and-zeroes/README.md)
+
 [491. 递增子序列](../problemset/non-decreasing-subsequences/README.md)
 
 [494. 目标和](../problemset/target-sum/README.md)
