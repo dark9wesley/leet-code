@@ -228,6 +228,8 @@
 
 [491. 递增子序列](../problemset/non-decreasing-subsequences/README.md)
 
+[494. 目标和](../problemset/target-sum/README.md)
+
 [501. 二叉搜索树中的众数](../problemset/find-mode-in-binary-search-tree/README.md)
 
 [509. 斐波那契数](../problemset/fibonacci-number/README.md)
