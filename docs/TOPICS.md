@@ -202,6 +202,8 @@
 
 [376. 摆动序列](../problemset/wiggle-subsequence/README.md)
 
+[377. 组合总和 Ⅳ](../problemset/combination-sum-iv/README.md)
+
 [383. 赎金信](../problemset/ransom-note/README.md)
 
 [404. 左叶子之和](../problemset/sum-of-left-leaves/README.md)
