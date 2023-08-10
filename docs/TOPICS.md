@@ -182,6 +182,8 @@
 
 [257. 二叉树的所有路径](../problemset/binary-tree-paths/README.md)
 
+[279. 完全平方数](../problemset/perfect-squares/README.md)
+
 [283. 移动零](../problemset/move-zeroes/README.md)
 
 [322. 零钱兑换](../problemset/coin-change/README.md)
