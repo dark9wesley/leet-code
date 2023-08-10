@@ -128,6 +128,8 @@
 
 [135. 分发糖果](../problemset/candy/README.md)
 
+[139. 单词拆分](../problemset/word-break/README.md)
+
 [141. 环形链表](../problemset/linked-list-cycle/README.md)
 
 [142. 环形链表 II](../problemset/linked-list-cycle-ii/README.md)
