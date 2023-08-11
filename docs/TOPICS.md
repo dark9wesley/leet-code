@@ -194,6 +194,8 @@
 
 [332. 重新安排行程](../problemset/reconstruct-itinerary/README.md)
 
+[337. 打家劫舍 III](../problemset/house-robber-iii/README.md)
+
 [343. 整数拆分](../problemset/integer-break/README.md)
 
 [344. 反转字符串](../problemset/reverse-string/README.md)

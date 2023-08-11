@@ -2,7 +2,7 @@
 
 > 难度：中等
 >
-> 次数：2
+> 次数：1
 >
 > https://leetcode.cn/problems/house-robber-ii
 
