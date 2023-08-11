@@ -2,16 +2,15 @@
 
 > 难度：中等
 >
+> 次数：2
+>
 > https://leetcode.cn/problems/house-robber
 
 ## 题目
 
-你是一个专业的小偷，计划偷窃沿街的房屋。每间房内都藏有一定的现金，影响你偷窃的唯
-一制约因素就是相邻的房屋装有相互连通的防盗系统，**如果两间相邻的房屋在同一晚上被
-小偷闯入，系统会自动报警**。
+你是一个专业的小偷，计划偷窃沿街的房屋。每间房内都藏有一定的现金，影响你偷窃的唯一制约因素就是相邻的房屋装有相互连通的防盗系统，**如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警**。
 
-给定一个代表每个房屋存放金额的非负整数数组，计算你**不触动警报装置的情况下**，一
-夜之内能够偷窃到的最高金额。
+给定一个代表每个房屋存放金额的非负整数数组，计算你**不触动警报装置的情况下**，一夜之内能够偷窃到的最高金额。
 
 ### 示例
 
@@ -43,14 +42,11 @@
  * @return {number}
  */
 var rob = function (nums) {
-  const len = nums.length
-  const f = []
-  f[0] = nums[0]
-  f[1] = Math.max(nums[0], nums[1])
-  for (let i = 2; i < len; i++) {
-    f[i] = Math.max(f[i - 2] + nums[i], f[i - 1])
-  }
+  const dp = [nums[0], Math.max(nums[0], nums[1])]
 
-  return f[len - 1]
+  for (let i = 2; i < nums.length; i++) {
+    dp[i] = Math.max(nums[i] + dp[i - 2], dp[i - 1])
+  }
+  return dp[nums.length - 1]
 }
 ```
