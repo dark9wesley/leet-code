@@ -160,6 +160,8 @@
 
 [211. 添加与搜索单词 - 数据结构设计](../problemset/design-add-and-search-words-data-structure/README.md)
 
+[213. 打家劫舍 II](../problemset/house-robber-ii/README.md)
+
 [215. 数组中的第 K 个最大元素](../problemset/kth-largest-element-in-an-array/README.md)
 
 [216. 组合总和 III](../problemset/kth-largest-element-in-an-array/README.md)
