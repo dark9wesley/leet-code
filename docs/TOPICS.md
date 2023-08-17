@@ -196,6 +196,8 @@
 
 [283. 移动零](../problemset/move-zeroes/README.md)
 
+[300. 最长递增子序列](../problemset/longest-increasing-subsequence/README.md)
+
 [309. 买卖股票的最佳时机含冷冻期](../problemset/best-time-to-buy-and-sell-stock-with-cooldown/README.md)
 
 [322. 零钱兑换](../problemset/coin-change/README.md)
