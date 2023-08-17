@@ -278,6 +278,8 @@
 
 [669. 修剪二叉搜索树](../problemset/trim-a-binary-search-tree/README.md)
 
+[674. 最长连续递增序列](../problemset/longest-continuous-increasing-subsequence/README.md)
+
 [680. 验证回文字符串 Ⅱ](../problemset/valid-palindrome-ii/README.md)
 
 [700. 二叉搜索树中的搜索](../problemset/search-in-a-binary-search-tree/README.md)
