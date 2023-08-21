@@ -322,6 +322,8 @@
 
 [1049. 最后一块石头的重量 II](../problemset/last-stone-weight-ii/README.md)
 
+[1143. 最长公共子序列](../problemset/longest-common-subsequence/README.md)
+
 [1382. 将二叉搜索树变平衡](../problemset/balance-a-binary-search-tree/README.md)
 
 [剑指 Offer 05. 替换空格](../problemset/剑指_Offer_05_替换空格/README.md)
