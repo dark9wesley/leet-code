@@ -300,6 +300,8 @@
 
 [763. 划分字母区间](../problemset/partition-labels/README.md)
 
+[781. 最长重复子数组](../problemset/maximum-length-of-repeated-subarray/README.md)
+
 [783. 二叉搜索树节点最小距离](../problemset/minimum-distance-between-bst-nodes/README.md)
 
 [844. 比较含退格的字符串](../problemset/backspace-string-compare/README.md)
