@@ -318,6 +318,8 @@
 
 [1005. K 次取反后最大化的数组和](../problemset/maximize-sum-of-array-after-k-negations/README.md)
 
+[1035. 不相交的线](../problemset/uncrossed-lines/README.md)
+
 [1047. 删除字符串中的所有相邻重复项](../problemset/remove-all-adjacent-duplicates-in-string/README.md)
 
 [1049. 最后一块石头的重量 II](../problemset/last-stone-weight-ii/README.md)
