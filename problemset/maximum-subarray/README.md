@@ -2,7 +2,7 @@
 
 > 难度：中等
 >
-> 次数：1
+> 次数：2
 >
 > https://leetcode.cn/problems/maximum-subarray
 
@@ -38,6 +38,8 @@
 
 ## 解法
 
+### 贪心
+
 ```javascript
 /**
  * @param {number[]} nums
@@ -55,6 +57,30 @@ var maxSubArray = function (nums) {
       count = 0
     }
   }
+  return result
+}
+```
+
+### 动态规划
+
+```javascript
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var maxSubArray = function (nums) {
+  const length = nums.length
+  const dp = new Array(length).fill(0)
+
+  dp[0] = nums[0]
+
+  let result = dp[0]
+
+  for (let i = 1; i < length; i++) {
+    dp[i] = Math.max(dp[i - 1] + nums[i], nums[i])
+    result = Math.max(result, dp[i])
+  }
+
   return result
 }
 ```
