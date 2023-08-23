@@ -224,6 +224,8 @@
 
 [383. 赎金信](../problemset/ransom-note/README.md)
 
+[392. 判断子序列](../problemset/is-subsequence/README.md)
+
 [404. 左叶子之和](../problemset/sum-of-left-leaves/README.md)
 
 [406. 根据身高重建队列](../problemset/queue-reconstruction-by-height/README.md)
