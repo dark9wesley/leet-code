@@ -2,7 +2,7 @@
 
 > 难度：简单
 >
-> 次数：1
+> 次数：2
 >
 > https://leetcode.cn/problems/is-subsequence
 
@@ -51,4 +51,28 @@ var isSubsequence = function (s, t) {
 
   return i >= s.length
 }
+```
+
+### 动态规划
+
+```javascript
+/**
+ * @param {string} s
+ * @param {string} t
+ * @return {boolean}
+ */
+const [m, n] = [s.length, t.length]
+const dp = new Array(m + 1).fill().map(() => new Array(n + 1).fill(0))
+
+for (let i = 1; i <= m; i++) {
+  for (let j = 1; j <= n; j++) {
+    if (s[i - 1] === t[j - 1]) {
+      dp[i][j] = dp[i - 1][j - 1] + 1
+    } else {
+      dp[i][j] = dp[i][j - 1]
+    }
+  }
+}
+
+return dp[m][n] === m
 ```
