@@ -272,6 +272,8 @@
 
 [541. 反转字符串 II](../problemset/reverse-string-ii/README.md)
 
+[583. 两个字符串的删除操作](../problemset/delete-operation-for-two-strings/README.md)
+
 [572. 另一棵树的子树](../problemset/subtree-of-another-tree/README.md)
 
 [617. 合并二叉树](../problemset/merge-two-binary-trees/README.md)
