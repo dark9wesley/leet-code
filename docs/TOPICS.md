@@ -282,6 +282,8 @@
 
 [637. 二叉树的层平均值](../problemset/average-of-levels-in-binary-tree/README.md)
 
+[647. 回文子串](../problemset/palindromic-substrings/README.md)
+
 [654. 最大二叉树](../problemset/maximum-binary-tree/README.md)
 
 [669. 修剪二叉搜索树](../problemset/trim-a-binary-search-tree/README.md)
