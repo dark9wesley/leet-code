@@ -266,6 +266,8 @@
 
 [515. 在每个树行中找最大值](../problemset/find-largest-value-in-each-tree-row/README.md)
 
+[516. 最长回文子序列](../problemset/longest-palindromic-subsequence/README.md)
+
 [518. 零钱兑换 II](../problemset/coin-change-ii/README.md)
 
 [530. 二叉搜索树的最小绝对差](../problemset/minimum-absolute-difference-in-bst/README.md)
