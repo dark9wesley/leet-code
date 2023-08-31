@@ -258,6 +258,8 @@
 
 [494. 目标和](../problemset/target-sum/README.md)
 
+[496. 下一个更大元素 I](../problemset/next-greater-element-i/README.md)
+
 [501. 二叉搜索树中的众数](../problemset/find-mode-in-binary-search-tree/README.md)
 
 [509. 斐波那契数](../problemset/fibonacci-number/README.md)
