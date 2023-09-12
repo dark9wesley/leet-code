@@ -38,6 +38,8 @@
 
 [40. 组合总和 II](../problemset/combination-sum-ii/README.md)
 
+[42. 接雨水](../problemset/trapping-rain-water/README.md)
+
 [45. 跳跃游戏 II](../problemset/jump-game-ii/README.md)
 
 [46. 全排列](../problemset/permutations/README.md)
