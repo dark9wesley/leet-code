@@ -82,6 +82,8 @@
 
 [83. 删除排序链表中的重复元素](../problemset/remove-duplicates-from-sorted-list/README.md)
 
+[84. 柱状图中最大的矩形](../problemset/largest-rectangle-in-histogram/README.md)
+
 [88. 合并两个有序数组](../problemset/merge-sorted-array/README.md)
 
 [90. 子集 II](../problemset/subsets-ii/README.md)
