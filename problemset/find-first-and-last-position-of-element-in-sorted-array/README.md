@@ -2,14 +2,13 @@
 
 > 难度：中等
 
-> 次数：2
+> 次数：3
 
 > https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array
 
 ## 题目
 
-给你一个按照非递减顺序排列的整数数组`nums`，和一个目标值`target`。请你找出给定目
-标值在数组中的开始位置和结束位置。
+给你一个按照非递减顺序排列的整数数组`nums`，和一个目标值`target`。请你找出给定目标值在数组中的开始位置和结束位置。
 
 如果数组中不存在目标值`target`，返回`[-1, -1]`。
 
@@ -124,5 +123,41 @@ function findBound(nums, target, isFirst) {
   }
 
   return result
+}
+```
+
+```javascript
+var searchRange = function (nums, target) {
+  function getLeft(mid) {
+    while (mid > 0 && nums[mid - 1] === target) {
+      mid--
+    }
+
+    return mid
+  }
+
+  function getRight(mid) {
+    while (mid < nums.length && nums[mid + 1] === target) {
+      mid++
+    }
+
+    return mid
+  }
+
+  let l = 0,
+    r = nums.length - 1
+
+  while (l <= r) {
+    const mid = Math.floor(l + (r - l) / 2)
+    if (nums[mid] > target) {
+      r = mid - 1
+    } else if (nums[mid] < target) {
+      l = mid + 1
+    } else {
+      return [getLeft(mid), getRight(mid)]
+    }
+  }
+
+  return [-1, -1]
 }
 ```
