@@ -2,14 +2,13 @@
 
 > 难度：简单
 >
-> 次数：1
+> 次数：2
 >
 > https://leetcode.cn/problems/backspace-string-compare
 
 ## 题目
 
-给定`s`和`t`两个字符串，当它们分别被输入到空白的文本编辑器后，如果两者相等，返
-回`true`。`#`代表退格字符。
+给定`s`和`t`两个字符串，当它们分别被输入到空白的文本编辑器后，如果两者相等，返回`true`。`#`代表退格字符。
 
 **注意:** 如果对空文本输入退格字符，文本继续为空。
 
@@ -58,22 +57,26 @@ var backspaceCompare = function (s, t) {
   while (i >= 0 || j >= 0) {
     while (i >= 0) {
       if (s[i] === '#') {
-        i--
         skipI++
-      } else if (skipI > 0) {
         i--
+      } else if (skipI > 0) {
         skipI--
-      } else break
+        i--
+      } else {
+        break
+      }
     }
 
     while (j >= 0) {
       if (t[j] === '#') {
-        j--
         skipJ++
-      } else if (skipJ > 0) {
         j--
+      } else if (skipJ > 0) {
         skipJ--
-      } else break
+        j--
+      } else {
+        break
+      }
     }
 
     if (s[i] !== t[j]) {
