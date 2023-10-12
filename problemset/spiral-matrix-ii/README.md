@@ -2,14 +2,13 @@
 
 > 难度：中等
 >
-> 次数：1
+> 次数：2
 >
 > https://leetcode.cn/problems/spiral-matrix-ii
 
 ## 题目
 
-给你一个正整数`n`，生成一个包含`1`到`n^2`所有元素，且元素按顺时针顺序螺旋排列
-的`n x n`正方形矩阵`matrix`。
+给你一个正整数`n`，生成一个包含`1`到`n^2`所有元素，且元素按顺时针顺序螺旋排列的`n x n`正方形矩阵`matrix`。
 
 ### 示例
 
@@ -38,18 +37,19 @@
  * @param {number} n
  * @return {number[][]}
  */
-const generateMatrix = function (n) {
-  let startX = 0
-  let startY = 0
-  let loop = Math.floor(n / 2)
-  const mid = Math.floor(n / 2)
+var generateMatrix = function (n) {
   const result = new Array(n).fill(0).map(() => new Array(n).fill(0))
-  let count = 1
+  let startX = 0,
+    startY = 0
+  let loop = Math.floor((n * n) / 4)
+  let mid = Math.floor(n / 2)
   let offset = 1
+  let count = 1
 
   while (loop--) {
-    let row = startX
-    let col = startY
+    let row = startX,
+      col = startY
+
     for (; col < startY + n - offset; col++) {
       result[row][col] = count++
     }
@@ -66,9 +66,9 @@ const generateMatrix = function (n) {
       result[row][col] = count++
     }
 
-    offset += 2
     startX++
     startY++
+    offset += 2
   }
 
   if (n % 2 !== 0) {
