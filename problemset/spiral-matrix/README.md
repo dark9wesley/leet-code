@@ -2,14 +2,13 @@
 
 > 难度：中等
 >
-> 次数：1
+> 次数：2
 >
 > https://leetcode.cn/problems/spiral-matrix
 
 ## 题目
 
-给你一个`m`行`n`列的矩阵`matrix`，请按照**顺时针螺旋顺序**，返回矩阵中的所有元素
-。
+给你一个`m`行`n`列的矩阵`matrix`，请按照**顺时针螺旋顺序**，返回矩阵中的所有元素。
 
 ### 示例
 
@@ -40,66 +39,66 @@
  * @param {number[][]} matrix
  * @return {number[]}
  */
-const spiralOrder = function (matrix) {
-  let startX = 0
-  let startY = 0
-  const m = matrix.length
-  const n = matrix[0].length
-  const count = m * n
-  const result = []
-  let offset = 1
-  let loop = Math.floor(count / 2)
+var spiralOrder = function (matrix) {
+  const m = matrix.length // 行数
+  const n = matrix[0].length // 列数
+  const count = m * n // 总次数
+  const res = []
+  let loop = Math.floor(count / 4) // 循环次数
 
   if (m === 1) {
     return matrix[0]
-  }
-  if (n === 1) {
+  } else if (n === 1) {
     return matrix.map(item => item[0])
+  } else {
+    let offset = 1
+    let startX = 0,
+      startY = 0
+
+    while (loop--) {
+      let row = startX,
+        col = startY
+
+      for (; col < startY + n - offset; col++) {
+        res.push(matrix[row][col])
+        if (res.length === count) {
+          return res
+        }
+      }
+
+      for (; row < startX + m - offset; row++) {
+        res.push(matrix[row][col])
+        if (res.length === count) {
+          return res
+        }
+      }
+
+      for (; col > startY; col--) {
+        res.push(matrix[row][col])
+        if (res.length === count) {
+          return res
+        }
+      }
+
+      for (; row > startX; row--) {
+        res.push(matrix[row][col])
+        if (res.length === count) {
+          return res
+        }
+      }
+
+      startX++
+      startY++
+      offset += 2
+    }
+
+    if (count % 2 !== 0) {
+      const middleX = Math.floor(m / 2)
+      const middleY = Math.floor(n / 2)
+      res.push(matrix[middleX][middleY])
+    }
   }
 
-  while (loop--) {
-    let row = startX
-    let col = startY
-
-    for (; col < startY + n - offset; col++) {
-      result.push(matrix[row][col])
-      if (result.length === count) {
-        return result
-      }
-    }
-
-    for (; row < startX + m - offset; row++) {
-      result.push(matrix[row][col])
-      if (result.length === count) {
-        return result
-      }
-    }
-
-    for (; col > startY; col--) {
-      result.push(matrix[row][col])
-      if (result.length === count) {
-        return result
-      }
-    }
-
-    for (; row > startX; row--) {
-      result.push(matrix[row][col])
-      if (result.length === count) {
-        return result
-      }
-    }
-
-    startX++
-    startY++
-    offset += 2
-  }
-
-  if (count % 2) {
-    const midX = Math.floor(m / 2)
-    const midY = Math.floor(n / 2)
-    result.push(matrix[midX][midY])
-  }
-
-  return result
+  return res
 }
 ```
