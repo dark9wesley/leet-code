@@ -2,7 +2,7 @@
 
 > 难度：简单
 >
-> 次数：3
+> 次数：4
 >
 > https://leetcode.cn/problems/reverse-linked-list/
 
