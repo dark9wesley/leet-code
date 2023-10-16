@@ -2,7 +2,7 @@
 
 > 难度：中等
 >
-> 次数：2
+> 次数：3
 >
 > https://leetcode.cn/problems/remove-nth-node-from-end-of-list/
 
@@ -53,7 +53,7 @@
 const removeNthFromEnd = function (head, n) {
   const dummy = new ListNode(0, head)
   let prev = (cur = dummy)
-  while (n-- > 0) {
+  while (n--) {
     cur = cur.next
   }
 
