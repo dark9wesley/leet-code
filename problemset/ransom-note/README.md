@@ -2,14 +2,13 @@
 
 > 难度：简单
 >
-> 次数：2
+> 次数：3
 >
 > https://leetcode.cn/problems/ransom-note
 
 ## 题目
 
-给你两个字符串：`ransomNote`和`magazine`，判断`ransomNote`能不能由`magazine`里面
-的字符构成。
+给你两个字符串：`ransomNote`和`magazine`，判断`ransomNote`能不能由`magazine`里面的字符构成。
 
 如果可以，返回`true`；否则返回`false`。
 
@@ -60,6 +59,30 @@ const canConstruct = function (ransomNote, magazine) {
       return false
     }
     charCount[char]--
+  }
+
+  return true
+}
+```
+
+```javascript
+/**
+ * @param {string} ransomNote
+ * @param {string} magazine
+ * @return {boolean}
+ */
+const canConstruct = function (ransomNote, magazine) {
+  const charMap = new Map()
+
+  for (const i of magazine) {
+    charMap.set(i, (charMap.get(i) ?? 0) + 1)
+  }
+
+  for (const i of ransomNote) {
+    charMap.set(i, (charMap.get(i) ?? 0) - 1)
+    if (charMap.get(i) < 0) {
+      return false
+    }
   }
 
   return true
