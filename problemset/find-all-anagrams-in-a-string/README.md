@@ -2,14 +2,13 @@
 
 > 难度：中等
 >
-> 次数：1
+> 次数：2
 >
 > https://leetcode.cn/problems/find-all-anagrams-in-a-string
 
 ## 题目
 
-给定两个字符串`s`和`p`，找到`s`中所有`p`的**异位词**的子串，返回这些子串的起始索
-引。不考虑答案输出的顺序。
+给定两个字符串`s`和`p`，找到`s`中所有`p`的**异位词**的子串，返回这些子串的起始索引。不考虑答案输出的顺序。
 
 **异位词**指由相同字母重排列形成的字符串（包括相同的字符串）。
 
@@ -46,30 +45,29 @@
  * @param {string} p
  * @return {number[]}
  */
-const findAnagrams = function (s, p) {
-  const pCount = new Array(26).fill(0)
-  const base = 'a'.charCodeAt()
+var findAnagrams = function (s, p) {
   const ans = []
+  const base = 'a'.charCodeAt()
+  const pCount = new Array(26).fill(0)
 
-  for (let i = 0; i < p.length; i++) {
-    pCount[p[i].charCodeAt() - base]++
+  for (const char of p) {
+    pCount[char.charCodeAt() - base]++
   }
 
   const sCount = new Array(26).fill(0)
-  let left = 0
-  let right = 0
+  let left = (right = 0)
 
   while (right < s.length) {
-    const rightChar = s[right].charCodeAt() - base
-    sCount[rightChar]++
+    const rightCode = s[right].charCodeAt() - base
+    sCount[rightCode]++
     right++
 
-    while (sCount[rightChar] > pCount[rightChar]) {
-      const leftChar = s[left].charCodeAt() - base
-      sCount[leftChar]--
+    while (sCount[rightCode] > pCount[rightCode]) {
+      let leftCode = s[left].charCodeAt() - base
+      sCount[leftCode]--
       left++
     }
-
+    console.log(right, left)
     if (right - left === p.length) {
       ans.push(left)
     }
