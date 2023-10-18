@@ -2,15 +2,13 @@
 
 > 难度：简单
 >
-> 次数：1
+> 次数：2
 >
 > https://leetcode.cn/problems/intersection-of-two-arrays-ii
 
 ## 题目
 
-给你两个整数数组`nums1`和`nums2`，请你以数组形式返回两数组的交集。返回结果中每个
-元素出现的次数，应与元素在两个数组中都出现的次数一致（如果出现次数不一致，则考虑
-取较小值）。可以不考虑输出结果的顺序。
+给你两个整数数组`nums1`和`nums2`，请你以数组形式返回两数组的交集。返回结果中每个元素出现的次数，应与元素在两个数组中都出现的次数一致（如果出现次数不一致，则考虑取较小值）。可以不考虑输出结果的顺序。
 
 ### 示例
 
@@ -38,16 +36,19 @@
  */
 const intersect = function (nums1, nums2) {
   const map = new Map()
-  const result = []
+  const res = []
+
   for (const num of nums1) {
-    map.set(num, map.has(num) ? map.get(num) + 1 : 1)
+    map.set(num, (map.get(num) ?? 0) + 1)
   }
+
   for (const num of nums2) {
     if (map.get(num) > 0) {
-      result.push(num)
+      res.push(num)
       map.set(num, map.get(num) - 1)
     }
   }
-  return result
+
+  return res
 }
 ```
