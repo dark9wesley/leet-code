@@ -2,7 +2,7 @@
 
 > 难度：中等
 >
-> 次数：1
+> 次数：2
 >
 > https://leetcode.cn/problems/group-anagrams
 
@@ -10,8 +10,7 @@
 
 给你一个字符串数组，请你将**字母异位词**组合在一起。可以按任意顺序返回结果列表。
 
-**字母异位词**是由重新排列源单词的字母得到的一个新单词，所有源单词中的字母通常恰
-好只用一次。
+**字母异位词**是由重新排列源单词的字母得到的一个新单词，所有源单词中的字母通常恰好只用一次。
 
 ### 示例
 
@@ -47,12 +46,12 @@
  */
 const groupAnagrams = function (strs) {
   const map = new Map()
-  for (const str of strs) {
-    const key = str.split('').sort().toString()
-    const list = map.has(key) ? map.get(key) : []
-    list.push(str)
-    map.set(key, list)
+
+  for (const char of strs) {
+    const key = char.split('').sort().toString('')
+    map.set(key, map.has(key) ? [...map.get(key), char] : [char])
   }
-  return Array.from(map.values())
+
+  return [...map.values()]
 }
 ```
