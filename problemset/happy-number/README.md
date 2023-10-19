@@ -2,7 +2,7 @@
 
 > 难度：简单
 >
-> 次数：1
+> 次数：2
 >
 > https://leetcode.cn/problems/happy-number
 
@@ -48,19 +48,20 @@
  */
 const isHappy = function (n) {
   const set = new Set()
+
   while (n !== 1) {
     if (set.has(n)) {
       return false
     }
     set.add(n)
-    let sum = 0
-    while (n > 0) {
-      const digit = n % 10
-      sum += digit * digit
-      n = Math.floor(n / 10)
-    }
-    n = sum
+    n = n
+      .toString()
+      .split('')
+      .reduce((a, b) => {
+        return a + b * b
+      }, 0)
   }
-  return true
+
+  return n === 1
 }
 ```
