@@ -2,14 +2,13 @@
 
 > 难度：中等
 >
-> 次数：1
+> 次数：2
 >
 > https://leetcode.cn/problems/4sum-ii
 
 ## 题目
 
-给你四个整数数组`nums1`、`nums2`、`nums3`和`nums4`，数组长度都是`n`，请你计算有
-多少个元组`(i, j, k, l)`能满足：
+给你四个整数数组`nums1`、`nums2`、`nums3`和`nums4`，数组长度都是`n`，请你计算有多少个元组`(i, j, k, l)`能满足：
 
 - `0 <= i, j, k, l < n`
 - `nums1[i] + nums2[j] + nums3[k] + nums4[l] == 0`
@@ -44,16 +43,17 @@
  * @param {number[]} nums4
  * @return {number}
  */
-const fourSumCount = function (nums1, nums2, nums3, nums4) {
+var fourSumCount = function (nums1, nums2, nums3, nums4) {
   const twoSumMap = new Map()
-  let count = 0
 
   for (const n1 of nums1) {
     for (const n2 of nums2) {
       const sum = n1 + n2
-      twoSumMap.set(sum, (twoSumMap.get(sum) || 0) + 1)
+      twoSumMap.set(sum, (twoSumMap.get(sum) ?? 0) + 1)
     }
   }
+
+  let count = 0
 
   for (const n3 of nums3) {
     for (const n4 of nums4) {
