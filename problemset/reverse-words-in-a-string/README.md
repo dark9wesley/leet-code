@@ -2,7 +2,7 @@
 
 > 难度：中等
 >
-> 次数：1
+> 次数：2
 >
 > https://leetcode.cn/problems/reverse-words-in-a-string
 
@@ -10,13 +10,11 @@
 
 给你一个字符串`s`，请你反转字符串中**单词**的顺序。
 
-**单词**是由非空格字符组成的字符串。`s`中使用至少一个空格将字符串中的**单词**分
-隔开。
+**单词**是由非空格字符组成的字符串。`s`中使用至少一个空格将字符串中的**单词**分隔开。
 
 返回**单词**顺序颠倒且**单词**之间用单个空格连接的结果字符串。
 
-**注意：** 输入字符串`s`中可能会存在前导空格、尾随空格或者单词间的多个空格。返回
-的结果字符串中，单词间应当仅用单个空格分隔，且不包含任何额外的空格。
+**注意：** 输入字符串`s`中可能会存在前导空格、尾随空格或者单词间的多个空格。返回的结果字符串中，单词间应当仅用单个空格分隔，且不包含任何额外的空格。
 
 ### 示例
 
@@ -46,52 +44,44 @@
 ## 解法
 
 ```javascript
-/**
- * @param {string} s
- * @return {string}
- */
+const removeExtraSpaces = str => {
+  let slow = 0
+  let fast = 0
+
+  while (fast < str.length) {
+    if (str[fast] === ' ' && (fast === 0 || str[fast - 1] === ' ')) {
+      fast++
+    } else {
+      str[slow++] = str[fast++]
+    }
+  }
+
+  str.length = str[slow - 1] === ' ' ? slow - 1 : slow
+}
+
+const reverseStr = (str, start, end) => {
+  let l = start,
+    r = end
+  while (l < r) {
+    ;[str[l], str[r]] = [str[r], str[l]]
+    l++
+    r--
+  }
+}
+
 const reverseWords = function (s) {
   const strArr = Array.from(s)
-
   removeExtraSpaces(strArr)
-
-  reverse(strArr, 0, strArr.length - 1)
+  reverseStr(strArr, 0, strArr.length - 1)
 
   let start = 0
   for (let i = 0; i <= strArr.length; i++) {
     if (strArr[i] === ' ' || i === strArr.length) {
-      reverse(strArr, start, i - 1)
+      reverseStr(strArr, start, i - 1)
       start = i + 1
     }
   }
 
   return strArr.join('')
-}
-
-function removeExtraSpaces(arr) {
-  let slow = 0
-  let fast = 0
-  const len = arr.length
-
-  while (fast < len) {
-    if (arr[fast] === ' ' && (fast === 0 || arr[fast - 1] === ' ')) {
-      fast++
-    } else {
-      arr[slow++] = arr[fast++]
-    }
-  }
-
-  arr.length = arr[slow - 1] === ' ' ? slow - 1 : slow
-}
-
-function reverse(strArr, start, end) {
-  let left = start
-  let right = end
-
-  while (left < right) {
-    ;[strArr[left], strArr[right]] = [strArr[right], strArr[left]]
-    left++
-    right--
-  }
 }
 ```
