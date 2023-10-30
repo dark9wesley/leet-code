@@ -2,7 +2,7 @@
 
 > 难度：简单
 >
-> 次数：1
+> 次数：2
 >
 > https://leetcode.cn/problems/repeated-substring-pattern
 
@@ -79,12 +79,7 @@ var repeatedSubstringPattern = function (s) {
   }
 
   let next = getNext(s)
-  if (
-    next[next.length - 1] !== 0 &&
-    s.length % (s.length - next[next.length - 1]) === 0
-  ) {
-    return true
-  }
-  return false
+
+  return next[next.length - 1] !== 0 && s.length % (s.length - next[next.length - 1]) === 0
 }
 ```
